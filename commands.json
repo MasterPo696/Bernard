@@ -1,0 +1,118 @@
+{
+  "categories": {
+    "crypto": {
+      "description": "Commands related to cryptocurrency data and prices",
+      "commands": [
+        {
+          "command": "send me btc price",
+          "action": "get_btc_price()",
+          "response_example": "The current price of Bitcoin is $30,000.",
+          "api_endpoint": "https://api.coingecko.com/api/v3/simple/price"
+        },
+        {
+          "command": "show eth market cap",
+          "action": "get_eth_market_cap()",
+          "response_example": "The current market cap of Ethereum is $400 billion.",
+          "api_endpoint": "https://api.coingecko.com/api/v3/simple/price"
+        },
+        {
+          "command": "compare btc and eth",
+          "action": "compare_btc_eth()",
+          "response_example": "BTC: $30,000, ETH: $2,000.",
+          "api_endpoint": "https://api.coingecko.com/api/v3/simple/price"
+        }
+      ]
+    },
+    "weather": {
+      "description": "Commands related to weather forecasts and current conditions",
+      "commands": [
+        {
+          "command": "get weather in London",
+          "action": "get_weather('London')",
+          "response_example": "The current weather in London is 18°C, partly cloudy.",
+          "api_endpoint": "http://api.openweathermap.org/data/2.5/weather"
+        },
+        {
+          "command": "weather forecast for tomorrow in New York",
+          "action": "get_weather_forecast('New York', 'tomorrow')",
+          "response_example": "Tomorrow's weather in New York will be 22°C, sunny.",
+          "api_endpoint": "http://api.openweathermap.org/data/2.5/forecast"
+        }
+      ]
+    },
+    "news": {
+      "description": "Commands related to fetching news",
+      "commands": [
+        {
+          "command": "latest news",
+          "action": "get_latest_news()",
+          "response_example": "Here are the top 3 news headlines: 1. ..., 2. ..., 3. ...",
+          "api_endpoint": "https://newsapi.org/v2/top-headlines"
+        },
+        {
+          "command": "crypto news",
+          "action": "get_crypto_news()",
+          "response_example": "Latest crypto news: BTC hits $30k, Ethereum upgrade completed.",
+          "api_endpoint": "https://newsapi.org/v2/everything"
+        }
+      ]
+    },
+    "finance": {
+      "description": "Commands related to stock and forex market data",
+      "commands": [
+        {
+          "command": "stock price of Tesla",
+          "action": "get_stock_price('Tesla')",
+          "response_example": "The current stock price of Tesla is $800.",
+          "api_endpoint": "https://finance.yahoo.com/quote/TSLA"
+        },
+        {
+          "command": "forex rate usd to eur",
+          "action": "get_forex_rate('USD', 'EUR')",
+          "response_example": "The current exchange rate from USD to EUR is 0.85.",
+          "api_endpoint": "https://api.exchangerate-api.com/v4/latest/USD"
+        }
+      ]
+    },
+    "task_management": {
+      "description": "Commands related to managing tasks",
+      "commands": [
+        {
+          "command": "create task 'Finish project'",
+          "action": "create_task('Finish project')",
+          "response_example": "Task 'Finish project' has been created.",
+          "api_endpoint": "https://api.trello.com/1/cards"
+        },
+        {
+          "command": "list all tasks",
+          "action": "list_all_tasks()",
+          "response_example": "Here are your current tasks: 1. Finish project, 2. Call client.",
+          "api_endpoint": "https://api.trello.com/1/lists"
+        }
+      ]
+    },
+    "utilities": {
+      "description": "General utility commands",
+      "commands": [
+        {
+          "command": "convert 100 usd to eur",
+          "action": "convert_currency(100, 'USD', 'EUR')",
+          "response_example": "100 USD equals 85 EUR.",
+          "api_endpoint": "https://api.exchangerate-api.com/v4/latest/USD"
+        },
+        {
+          "command": "current time in Tokyo",
+          "action": "get_current_time('Tokyo')",
+          "response_example": "The current time in Tokyo is 15:30.",
+          "api_endpoint": "http://worldtimeapi.org/api/timezone/Asia/Tokyo"
+        },
+        {
+          "command": "how many days until 2025",
+          "action": "calculate_days_until('2025-01-01')",
+          "response_example": "There are 365 days until 2025.",
+          "api_endpoint": "None"
+        }
+      ]
+    }
+  }
+}

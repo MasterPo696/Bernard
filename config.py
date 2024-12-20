@@ -1,0 +1,1 @@
+VOCAB_SIZE = 2000
